@@ -2,7 +2,7 @@
 
 # Quick Start
 
-        git clone 
+        git clone https://github.com/erdtch/yolo_trainer_with_python.git
         cd yolo_trainer_with_python
 
 Create required directories(folders) :
