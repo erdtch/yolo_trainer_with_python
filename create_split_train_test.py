@@ -8,9 +8,10 @@ Created on Wed Jun  5 15:41:24 2019
 import os 
 import csv 
 import numpy as np 
+import init_config 
 
-train_detail = 'train_list_images.txt'
-valid_detail = 'test_list_images.txt'
+train_detail = init_config.train_detail
+valid_detail = init_config.valid_detail
 
 split_train = 0.8 
 
