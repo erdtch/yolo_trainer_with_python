@@ -86,13 +86,22 @@ Be sure that we are in "yolo_trainer_with_python/darknet". Now download pretaine
         
         wget https://pjreddie.com/media/files/darknet53.conv.74 -O darknet53.conv.74
         
-On this step we are ready to train our model. Then run 
-
-        python train_command_generator.py 
+On this step we are ready to train our model. Let's go back to "yolo_trainer_with_python" 
         
+        cd ../
+
+Edit some script generator on "train_command_generator.py" which you can choose
+
+        GPU = False / True      # False = CPU , True = GPU 
+        GPU_Card = [0,1,2,3]    # Add number of GPU-Cards which you want to train model.
+
+Then save it and run. 
+        
+        python train_command_generator.py 
+
 Copy a command form the output and then run that command.
 
-# To be continue ... Good Luck ! 
+# Good Luck ! 
 
 # References 
 Tutorial : 
@@ -103,15 +112,15 @@ Repo :
 
 https://github.com/spmallick/learnopencv/tree/master/YOLOv3-Training-Snowman-Detector
         
- 
-YOLO Website : 
 
+
+See more training detail on YOLO Website : 
 https://pjreddie.com/darknet/yolo/
 
 Darknet with improvements :
 https://github.com/AlexeyAB/darknet
 
-YOLO Mark GUI :
+Label bounding box by yourself YOLO Mark GUI :
 https://github.com/AlexeyAB/Yolo_mark
 
     
