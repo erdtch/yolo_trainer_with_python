@@ -68,8 +68,11 @@ for runing on GPU you need to change some config on "Makefile", if not skip this
         COMMON+= -DGPU -I/usr/local/cuda/include/          # change to -/usr/local/cuda-10.0/include/
         CFLAGS+= -DGPU
         LDFLAGS+= -L/usr/local/cuda/lib64 -lcuda -lcudart -lcublas -lcurand  # change to -I/usr/local/cuda-10.0/include/
-        export = 
         endif
+    
+    3. save your Makefile and then run this command below
+    
+        export PATH=/usr/local/cuda-10.0/bin:$PATH
 
 After edit "Makefile" follow the steps. 
 
