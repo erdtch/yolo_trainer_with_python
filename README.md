@@ -70,7 +70,7 @@ for runing on GPU you need to change some config on "Makefile", if not skip this
         LDFLAGS+= -L/usr/local/cuda/lib64 -lcuda -lcudart -lcublas -lcurand  # change to -I/usr/local/cuda-10.0/include/
         endif
     
-    3. save your Makefile and then run this command below
+    3. save your "Makefile" and then run this command below
     
         export PATH=/usr/local/cuda-10.0/bin:$PATH
 
@@ -86,7 +86,7 @@ Be sure that we are in "yolo_trainer_with_python/darknet". Now download pretaine
         
 On this step we are ready to train our model. 
 
-# To be continue ... 
+# To be continue ..., I'm lazy to tell you more. Bye ! 
 
 # References 
 Tutorial : 
