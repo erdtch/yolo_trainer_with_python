@@ -1,5 +1,7 @@
 # yolo_trainer_with_python
 
+We create python scripts to generate all required files for training yolo with darknet.
+
 # Quick Start
 
         git clone https://github.com/erdtch/yolo_trainer_with_python.git
