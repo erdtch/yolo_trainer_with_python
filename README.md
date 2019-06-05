@@ -1,6 +1,6 @@
 # yolo_trainer_with_python
 
-#Quick Start
+# Quick Start
 
         git clone 
         cd yolo_trainer_with_python
@@ -76,9 +76,26 @@ for runing on GPU you need to change some config on "Makefile", if not skip this
 
 After edit "Makefile" follow the steps. 
 
-If you don't have GPU or CUDA, you can skip to this step. (after clone darknet repo). 
+If you don't have GPU and CUDA, you can skip to this step. (after clone darknet repo). 
 
         make 
+        
+Be sure that we are in "yolo_trainer_with_python/darknet". Now download pretained darknet network by running 
+        
+        wget https://pjreddie.com/media/files/darknet53.conv.74 -O darknet53.conv.74
+        
+On this step we are ready to train our model. 
+
+# To be continue ... 
+
+# reference 
+Tutorail : 
+
+https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/
+
+Repo : 
+
+https://github.com/spmallick/learnopencv/tree/master/YOLOv3-Training-Snowman-Detector
         
  
     
