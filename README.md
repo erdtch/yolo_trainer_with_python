@@ -2,14 +2,14 @@
 
 #Quick Start
 
-    git clone 
-    cd yolo_trainer_with_python
+        git clone 
+        cd yolo_trainer_with_python
 
 Create required directories(folders) :
 
-    mkdir labels
-    mkdir JPEGImages
-    mkdir weights
+        mkdir labels
+        mkdir JPEGImages
+        mkdir weights
     
 Then put all images into folder : JPEGImages
 
