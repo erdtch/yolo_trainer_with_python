@@ -23,21 +23,21 @@ It will generate two files, "darknet.data" and "classes.name".
 
 Let's create label and bounding box files from your CSV file. Which you have to set the columns into the format 
 
-    [filename, class, label, x, y, width, height]    
+    [filename, class_label, x, y, width, height]    
 
 
 Note  
     
     - filename column is in format "image01.jpg" (image name only !) and all images are in labels folder. 
     - x, y, width, height are in range [0,1] . 
-    - class is in integer. 
+    - class_label is in integer. 
     - 1 image can have more than 1 bounding box and class. 
     
 Then, run  
       
         python create_label_from_csv.py
 
-It will create 'image_name.txt' file which contain class(es) and bounding box(es) of each image.
+It will create 'image_name.txt' file which contain class(es) and bounding box(es) of each image. All label_files are in folder "labels".
 
 Now, we need to split training samples and test samples. we will create from runing 
 
