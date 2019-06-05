@@ -47,7 +47,7 @@ command += pretained_net_path
 command += " > " + log_path
 
 if GPU : 
-    command += " -gpu " + str(GPU_Card).replace('[','').replace(']','').replace(' ','')
+    command += " -gpus " + str(GPU_Card).replace('[','').replace(']','').replace(' ','')
     
 print('*'*20)
 print("Run this command ")
