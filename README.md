@@ -86,9 +86,13 @@ Be sure that we are in "yolo_trainer_with_python/darknet". Now download pretaine
         
         wget https://pjreddie.com/media/files/darknet53.conv.74 -O darknet53.conv.74
         
-On this step we are ready to train our model. 
+On this step we are ready to train our model. Then run 
 
-# To be continue ..., I'm lazy to tell you more. Bye ! 
+        python train_command_generator.py 
+        
+Copy a command form the output and then run that command.
+
+# To be continue ... Good Luck ! 
 
 # References 
 Tutorial : 
