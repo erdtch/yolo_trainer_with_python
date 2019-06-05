@@ -12,8 +12,8 @@ import os
 Config Training on GPU or Not. 
 """
 
-GPU = False  # Set Training False = CPU, True = GPU
-GPU_Card = [0]  # Number of your GPU [0,1,2,3]
+GPU = True  # Set Training False = CPU, True = GPU
+GPU_Card = [0,1]  # Number of your GPU [0,1,2,3]
 
 """
 Select yolo version to train your can see at 'darknet/cfg'
@@ -40,12 +40,15 @@ pretained_net_path = "./darknet/darknet53.conv.74"
 cfg_path = os.path.join(current_path, 'darknet', 'cfg', yolo_cfg)
 log_path = os.path.join(current_path, train_log)
 
-command = "./darknet detector train "
+command = "./darknet/darknet detector train "
 command += darknet_data_path + " "
 command += cfg_path + " "
 command += pretained_net_path 
 command += " > " + log_path
 
+if GPU : 
+    command += " -gpu " + str(GPU_Card).replace('[','').replace(']','').replace(' ','')
+    
 print('*'*20)
 print("Run this command ")
 print('*'*20 + '\n')
