@@ -88,8 +88,8 @@ On this step we are ready to train our model.
 
 # To be continue ... 
 
-# reference 
-Tutorail : 
+# References 
+Tutorial : 
 
 https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/
 
