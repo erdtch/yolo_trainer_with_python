@@ -102,5 +102,10 @@ YOLO Website :
 
 https://pjreddie.com/darknet/yolo/
 
+Darknet with improvements :
+https://github.com/AlexeyAB/darknet
+
+YOLO Mark GUI :
+https://github.com/AlexeyAB/Yolo_mark
 
     
