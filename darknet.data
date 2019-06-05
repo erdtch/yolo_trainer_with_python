@@ -1,0 +1,5 @@
+classes = 1
+train = D:\Phoenicis\TrainingYoLo\train_list_images.txt
+valid = D:\Phoenicis\TrainingYoLo\test_list_images.txt
+names = D:\Phoenicis\TrainingYoLo\classes.name
+backup = D:\Phoenicis\TrainingYoLo\weights\

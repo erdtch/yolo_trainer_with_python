@@ -1,0 +1,7 @@
+/labels/*
+/JPEGImages/*
+/darknet/*
+*.name
+*.weights
+*.h5
+*.data
