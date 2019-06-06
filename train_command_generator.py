@@ -19,7 +19,7 @@ GPU_Card = [0,1]  # Number of your GPU [0,1,2,3]
 Select yolo version to train your can see at 'darknet/cfg'
 """
 
-yolo_cfg = 'yolov3.cfg' # file are contain in 'darknet/cfg' 
+yolo_cfg = 'custom_yolov3.cfg' # file are contain in 'darknet/cfg' 
 
 """
 Where to store training-log 
