@@ -105,9 +105,9 @@ Before training choose your YOLO model by using ".cfg" you can see all .cfg file
 
         Edit all lines about classes in ".cfg" file.
 
-Choose your yolo version to train by change parameter on ***"train_command_generator.py"***
+Choose your yolo version to train by changing parameter : ***"train_command_generator.py"***
 
-        yolo_cfg = 'yolov3.cfg'        # your Yolo version. this file must be in "yolo_trainer_with_python/cfg_data"
+        yolo_cfg = 'yolov3.cfg'        # your Yolo version. This file must be in "yolo_trainer_with_python/cfg_data"
 
 
 Then save it and run. 
