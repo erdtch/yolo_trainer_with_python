@@ -30,16 +30,16 @@ print("Create Training Set : ", len(train_list), 'samples. Saved at : ', train_d
 with open(train_detail, 'a') as csvFile:
     writer = csv.writer(csvFile, delimiter=' ')
     for file in train_list : 
-        img_path = os.join(img_dir_path, file)
+        img_path = os.path.join(img_dir_path, file)
         text_line = [img_path]
         writer.writerow(text_line)
 csvFile.close()
 
 print("Create Validate Set : ", len(valid_list), 'samples. Saved at : ', valid_detail)
-with open(valid_list, 'a') as csvFile:
+with open(valid_detail, 'a') as csvFile:
     writer = csv.writer(csvFile, delimiter=' ')
     for file in valid_list : 
-        img_path = os.join(img_dir_path, file)
+        img_path = os.path.join(img_dir_path, file)
         text_line = [img_path]
         writer.writerow(text_line)
 csvFile.close()
