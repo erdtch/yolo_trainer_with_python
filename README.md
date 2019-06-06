@@ -1,6 +1,6 @@
 # yolo_trainer_with_python
 
-We create python scripts to generate all required files for training yolo with darknet.
+We created python scripts to generate all required files for training yolo with darknet.
 
 # Quick Start
 
