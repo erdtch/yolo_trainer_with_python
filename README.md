@@ -94,7 +94,7 @@ On this step we are ready to train our model. Let's go back to ***"yolo_trainer_
         
         cd ../
 
-Edit some script generator on ***"train_command_generator.py"*** which you can choose
+Edit some codes generator on ***"train_command_generator.py"*** which you can choose
 
         GPU = False / True      # False = CPU , True = GPU 
         GPU_Card = [0,1,2,3]    # Add number of GPU-Cards which you want to train model.
@@ -122,6 +122,7 @@ On the project we copied all cfg files into ***"yolo_trainer_with_python/cfg_dat
                 5. Learning Rate, Steps, Scales, Burn In 
                 6. Data augmentation
                 7. Number of iterations
+        Note : You have to edit class number on parameter "classes" in cfg file to match your classes.
 
 You can see more details about YOLO configurations at ***TOPIC 6*** on this website: 
 
