@@ -36,9 +36,9 @@ for r in range(len(label_df)):
     width = (xmax-xmin)
     height = (ymax-ymin)
     
-    with open(file_path, 'a') as csvFile:
+    with open(file_path, 'a', newline='') as csvFile:
         text_line = [clss, x_cen, y_cen, width, height]
-        writer = csv.writer(csvFile, delimiter=' ')
+        writer = csv.writer(csvFile, delimiter=' ', dialect= csv.unix_dialect, quoting=csv.QUOTE_NONE)
         writer.writerow(text_line)
     csvFile.close()
     
