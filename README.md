@@ -17,7 +17,7 @@ Then put all images into folder : JPEGImages
 
 Preprocessing Steps : 
 
-edit init_config.py to match to your data ***required***
+Edit init_config.py to match to your data ***required***
       
         python init_config.py 
 
@@ -25,7 +25,7 @@ It will generate two files, "darknet.data" and "classes.name".
 
 Let's create label and bounding box files from your CSV file. Which you have to set the columns into the format 
 
-    [filename, class_label, x, y, width, height]    
+        [filename, class_id, xmin, xmax, ymin, ymax]    
 
 
 Note  
@@ -40,6 +40,10 @@ Then, run
         python create_label_from_csv.py
 
 It will create 'image_name.txt' file which contain class(es) and bounding box(es) of each image. All label_files are in folder "labels".
+
+Text files format :  
+ 
+        [class_id, x_center, y_center, width, height]
 
 Now, we need to split training samples and test samples. we will create from runing 
 
