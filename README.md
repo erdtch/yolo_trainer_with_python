@@ -107,6 +107,8 @@ Copy a command form the output and then run that command.
 
 # Good Luck ! 
 
+My power supplies just blow up while training on 2 GPUs 1080-Ti. Make sure that your have a warranty for your computer before training. 
+
 # References 
 Tutorial : 
 
