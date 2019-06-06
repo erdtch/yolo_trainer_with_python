@@ -29,8 +29,8 @@ img_dir_path = os.path.join(img_dir_path, "JPEGImages")
 
 
 print("Create Training Set : ", len(train_list), 'samples. Saved at : ', train_detail)
-with open(train_detail, 'a', newline='\n') as csvFile:
-    writer = csv.writer(csvFile, delimiter=' ')
+with open(train_detail, 'a', newline='') as csvFile:
+    writer = csv.writer(csvFile, delimiter=' ', dialect= csv.unix_dialect, quoting=csv.QUOTE_NONE)
     for file in train_list : 
         img_path = os.path.join(img_dir_path, file)
         text_line = [img_path]
@@ -38,8 +38,8 @@ with open(train_detail, 'a', newline='\n') as csvFile:
 csvFile.close()
 
 print("Create Validate Set : ", len(valid_list), 'samples. Saved at : ', valid_detail)
-with open(valid_detail, 'a', newline='\n') as csvFile:
-    writer = csv.writer(csvFile, delimiter=' ')
+with open(valid_detail, 'a', newline='') as csvFile:
+    writer = csv.writer(csvFile, delimiter=' ', dialect= csv.unix_dialect, quoting=csv.QUOTE_NONE)
     for file in valid_list : 
         img_path = os.path.join(img_dir_path, file)
         text_line = [img_path]
