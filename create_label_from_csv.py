@@ -36,13 +36,14 @@ for r in range(len(label_df)):
     width = (xmax-xmin).values[0]
     height = (ymax-ymin).values[0]
     
-    with open(file_path, 'a') as csvFile:
+    with open(file_path, 'a', newline='\n') as csvFile:
         text_line = [clss, x_cen, y_cen, width, height]
         writer = csv.writer(csvFile, delimiter=' ')
         writer.writerow(text_line)
     csvFile.close()
     
 print('Generate labels done, check your directory at :', os.path.join(current_path, label_dir))
+
     
 
 

@@ -27,8 +27,9 @@ valid_list = list_img_name[int(len(list_img_name)*split_train):]
 img_dir_path = os.getcwd()
 img_dir_path = os.path.join(img_dir_path, "JPEGImages")
 
+
 print("Create Training Set : ", len(train_list), 'samples. Saved at : ', train_detail)
-with open(train_detail, 'a') as csvFile:
+with open(train_detail, 'a', newline='\n') as csvFile:
     writer = csv.writer(csvFile, delimiter=' ')
     for file in train_list : 
         img_path = os.path.join(img_dir_path, file)
@@ -37,7 +38,7 @@ with open(train_detail, 'a') as csvFile:
 csvFile.close()
 
 print("Create Validate Set : ", len(valid_list), 'samples. Saved at : ', valid_detail)
-with open(valid_detail, 'a') as csvFile:
+with open(valid_detail, 'a', newline='\n') as csvFile:
     writer = csv.writer(csvFile, delimiter=' ')
     for file in valid_list : 
         img_path = os.path.join(img_dir_path, file)
@@ -45,5 +46,16 @@ with open(valid_detail, 'a') as csvFile:
         writer.writerow(text_line)
 csvFile.close()
 
+# txt_file = open(train_detail, "w+")
+# for file in train_list : 
+#     img_path = os.path.join(img_dir_path, file)
+#     txt = img_path
+#     txt_file.write(txt)
+# txt_file.close()
 
-        
+# txt_file = open(valid_detail, "w+")
+# for file in valid_list : 
+#     img_path = os.path.join(img_dir_path, file)
+#     txt = img_path
+#     txt_file.write(txt)
+# txt_file.close()
