@@ -25,6 +25,7 @@ train_list = list_img_name[:int(len(list_img_name)*split_train)]
 valid_list = list_img_name[int(len(list_img_name)*split_train):]
 
 img_dir_path = os.getcwd()
+img_dir_path = os.path.join(img_dir_path, "JPEGImages")
 
 print("Create Training Set : ", len(train_list), 'samples. Saved at : ', train_detail)
 with open(train_detail, 'a') as csvFile:
