@@ -7,3 +7,6 @@
 *.data
 darknet.data
 /raccoon_dataset/*
+*.csv
+*.txt
+/__pycache__/*
