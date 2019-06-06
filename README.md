@@ -99,8 +99,31 @@ Edit some script generator on "train_command_generator.py" which you can choose
         GPU = False / True      # False = CPU , True = GPU 
         GPU_Card = [0,1,2,3]    # Add number of GPU-Cards which you want to train model.
 
+You also can choose what Yolo model you want to train by change parameter on "train_command_generator.py"
+
+        yolo_cfg = 'yolov3.cfg'        # your Yolo version. this file must be in "yolo_trainer_with_python/cfg_data"
+
+
 Then save it and run. 
         
+        python train_command_generator.py 
+
+Copy a command form the output and then run that command.
+
+# Edit Config on YOLO 
+
+On the project we copied all cfg files into "yolo_trainer_with_python". In this folder you will see all ".cfg" files which you can edit some configuration for training your model. See more detail at : https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/ in topic 6 .
+
+        1. Batch hyper-parameter
+        2. Subdivisions configuration
+        3. Width , Height and Channels 
+        4. Momentum and decay 
+        5. Learning Rate, Steps, Scales, Burn In 
+        6. Data augmentation
+        7. Number of iterations
+
+Save your edited cfg file at "yolo_trainer_with_python/cfg_data" and edit "train_command_generator.py" to choose tour cfg file then run 
+
         python train_command_generator.py 
 
 Copy a command form the output and then run that command.
@@ -109,13 +132,13 @@ Copy a command form the output and then run that command.
 
 My power supplies just blow up while training on 2 GPUs 1080-Ti. Make sure that your have a warranty for your computer before training. 
 
-# References 
-Tutorial : 
 
+# References 
+
+Tutorial : 
 https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/
 
 Repo : 
-
 https://github.com/spmallick/learnopencv/tree/master/YOLOv3-Training-Snowman-Detector
         
 

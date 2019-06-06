@@ -37,7 +37,7 @@ current_path = os.getcwd()
 darknet_dir_path = os.path.join(current_path, 'darknet', '')
 darknet_data_path = os.path.join(current_path, 'darknet.data')
 pretained_net_path = "./darknet/darknet53.conv.74"
-cfg_path = os.path.join(current_path, 'darknet', 'cfg', yolo_cfg)
+cfg_path = os.path.join(current_path, 'cfg_data', yolo_cfg)
 log_path = os.path.join(current_path, train_log)
 
 command = "./darknet/darknet detector train "
