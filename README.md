@@ -21,7 +21,7 @@ Edit init_config.py to match to your data ***required***
       
         python init_config.py 
 
-It will generate two files, "darknet.data" and "classes.name".
+It will generate two files, ***"darknet.data"*** and ***"classes.name"***.
 
 Let's create label and bounding box files from your CSV file. Which you have to set the columns into the format 
 
@@ -58,7 +58,7 @@ Install Darknet and compile it.
         git clone https://github.com/pjreddie/darknet
         cd darknet
     
-for runing on GPU you need to change some config on "Makefile", if not skip this.
+For runing on GPU you need to change some config on "Makefile", if not skip this.
     
     1. edit GPU = 1 on top of the file 
     
@@ -86,20 +86,20 @@ If you don't have GPU and CUDA, you can skip to this step. (after clone darknet 
 
         make 
         
-Be sure that we are in "yolo_trainer_with_python/darknet". Now download pretained darknet network by running 
+Be sure that we are in ***"yolo_trainer_with_python/darknet"***. Now download pretained darknet network by running 
         
         wget https://pjreddie.com/media/files/darknet53.conv.74 -O darknet53.conv.74
         
-On this step we are ready to train our model. Let's go back to "yolo_trainer_with_python" 
+On this step we are ready to train our model. Let's go back to ***"yolo_trainer_with_python"*** 
         
         cd ../
 
-Edit some script generator on "train_command_generator.py" which you can choose
+Edit some script generator on ***"train_command_generator.py"*** which you can choose
 
         GPU = False / True      # False = CPU , True = GPU 
         GPU_Card = [0,1,2,3]    # Add number of GPU-Cards which you want to train model.
 
-You also can choose what Yolo model you want to train by change parameter on "train_command_generator.py"
+You also can choose what Yolo model you want to train by change parameter on ***"train_command_generator.py"***
 
         yolo_cfg = 'yolov3.cfg'        # your Yolo version. this file must be in "yolo_trainer_with_python/cfg_data"
 
@@ -112,7 +112,7 @@ Copy a command form the output and then run that command.
 
 # Edit Config on YOLO 
 
-On the project we copied all cfg files into "yolo_trainer_with_python". In this folder you will see all ".cfg" files which you can edit some configuration for training your model. 
+On the project we copied all cfg files into "yolo_trainer_with_python". In this folder you will see all ***".cfg"*** files which you can edit some configuration for training your model. 
 
         These are what you can edit on .cfg file for training your model.
                 1. Batch hyper-parameter
@@ -124,12 +124,13 @@ On the project we copied all cfg files into "yolo_trainer_with_python". In this 
                 7. Number of iterations
 
 You can see more details about YOLO configurations at ***TOPIC 6*** on this website: 
+
 https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/  
 
-Update and download new ".cfg" files on this website : 
+Update and download new ***".cfg"*** files on this website : 
 https://pjreddie.com/darknet/yolo/
 
-Save your edited cfg file at "yolo_trainer_with_python/cfg_data" and edit "train_command_generator.py" to choose tour cfg file then run 
+Save your edited cfg file at ***"yolo_trainer_with_python/cfg_data"*** and edit ***"train_command_generator.py"*** to choose tour cfg file then run 
 
         python train_command_generator.py 
 
