@@ -112,15 +112,16 @@ Copy a command form the output and then run that command.
 
 # Edit Config on YOLO 
 
-On the project we copied all cfg files into "yolo_trainer_with_python". In this folder you will see all ".cfg" files which you can edit some configuration for training your model. See more details at : https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/ in topic 6 .
+On the project we copied all cfg files into "yolo_trainer_with_python". In this folder you will see all ".cfg" files which you can edit some configuration for training your model. See more details at : https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/ in topic 6 . 
 
-        1. Batch hyper-parameter
-        2. Subdivisions configuration
-        3. Width , Height and Channels 
-        4. Momentum and decay 
-        5. Learning Rate, Steps, Scales, Burn In 
-        6. Data augmentation
-        7. Number of iterations
+        These are what you can edit on .cfg file for training your model.
+                1. Batch hyper-parameter
+                2. Subdivisions configuration
+                3. Width , Height and Channels 
+                4. Momentum and decay 
+                5. Learning Rate, Steps, Scales, Burn In 
+                6. Data augmentation
+                7. Number of iterations
 
 Save your edited cfg file at "yolo_trainer_with_python/cfg_data" and edit "train_command_generator.py" to choose tour cfg file then run 
 
