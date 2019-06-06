@@ -10,3 +10,4 @@ darknet.data
 *.csv
 *.txt
 /__pycache__/*
+*.jpg
