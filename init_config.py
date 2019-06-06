@@ -16,7 +16,7 @@ Config Parameter
 
 # list class label sort by number 
 class_number = 1 
-class_label = ['snowman']
+class_label = ['raccoon']
 classes_file = 'classes.name'
 
 
