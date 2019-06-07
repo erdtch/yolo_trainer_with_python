@@ -32,8 +32,8 @@ with open(classesFile, 'rt') as f:
 
 # modelConfiguration = "darknet-yolov3.cfg";
 # modelWeights = "weights/darknet-yolov3-tiny_final.weights";
-modelConfiguration = "cfg_data/custom_yolov3.cfg";
-modelWeights = "weights/custom_yolov3_800.weights";
+modelConfiguration = "cfg_data/custom_yolov3-tiny.cfg";
+modelWeights = "weights/custom_yolov3-tiny_final.weights";
 
 net = cv.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_OPENCV)
@@ -87,6 +87,8 @@ def postprocess(frame, outs):
             classId = np.argmax(scores)
             #if scores[classId]>confThreshold:
             confidence = scores[classId]
+            if confidence > 0 : 
+                print("confidence:", confidence)
             if detection[4]>confThreshold:
                 print(detection[4], " - ", scores[classId], " - th : ", confThreshold)
                 print(detection)

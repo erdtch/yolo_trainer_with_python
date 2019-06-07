@@ -109,12 +109,22 @@ Choose your yolo version to train by changing parameter : ***"train_command_gene
 
         yolo_cfg = 'yolov3.cfg'        # your Yolo version. This file must be in "yolo_trainer_with_python/cfg_data"
 
+        is_tiny = True                 # if you want to train tiny yolo
+
 
 Then save it and run. 
         
         python train_command_generator.py 
 
 Copy a command form the output and then run that command.
+
+# Training on Tiny YOLO 
+
+Download ***"yolov3-tiny.weights"*** on https://pjreddie.com/darknet/yolo/ and save it to "***yolo_trainer_with_python/darknet***" then edit ***"train_command_generator.py"*** to set 
+        
+        is_tiny = True 
+
+See more details on TOPIC : How to train tiny-yolo : https://github.com/AlexeyAB/darknet
 
 # Edit configurations on YOLO 
 
