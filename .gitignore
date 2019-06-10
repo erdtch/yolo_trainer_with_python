@@ -1,6 +1,7 @@
 /labels/*
 /JPEGImages/*
 /darknet/*
+/darknet2
 *.name
 *.weights
 *.h5
@@ -10,3 +11,6 @@ darknet.data
 *.csv
 *.txt
 /__pycache__/*
+*.log
+*.backup
+*.swp
