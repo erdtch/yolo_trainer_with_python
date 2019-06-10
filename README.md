@@ -99,9 +99,17 @@ Edit some codes generator on ***"train_command_generator.py"*** which you can ch
         GPU = False / True      # False = CPU , True = GPU 
         GPU_Card = [0,1,2,3]    # Add number of GPU-Cards which you want to train model.
 
-You also can choose what Yolo model you want to train by change parameter on ***"train_command_generator.py"***
+Before training choose your YOLO model by using ".cfg" you can see all .cfg files on  ***"yolo_trainer_with_python/cfg_data"*** and edit ***".cfg"*** file for some configurations.
 
-        yolo_cfg = 'yolov3.cfg'        # your Yolo version. this file must be in "yolo_trainer_with_python/cfg_data"
+        classes = 1     # number of your classes 
+
+        Edit all lines about classes in ".cfg" file.
+
+Choose your yolo version to train by changing parameter : ***"train_command_generator.py"***
+
+        yolo_cfg = 'yolov3.cfg'        # your Yolo version. This file must be in "yolo_trainer_with_python/cfg_data"
+
+        is_tiny = True                 # if you want to train tiny yolo
 
 
 Then save it and run. 
@@ -110,7 +118,15 @@ Then save it and run.
 
 Copy a command form the output and then run that command.
 
-# Edit Config on YOLO 
+# Training on Tiny YOLO 
+
+Download ***"yolov3-tiny.weights"*** on https://pjreddie.com/darknet/yolo/ and save it to "***yolo_trainer_with_python/darknet***" then edit ***"train_command_generator.py"*** to set 
+        
+        is_tiny = True 
+
+See more details on TOPIC : How to train tiny-yolo : https://github.com/AlexeyAB/darknet
+
+# Edit configurations on YOLO 
 
 On the project we copied all cfg files into ***"yolo_trainer_with_python/cfg_data"***. In this folder you will see all ***".cfg"*** files which you can edit some configuration for training your model. 
 
@@ -142,7 +158,6 @@ Copy a command form the output and then run that command.
 # Good Luck ! 
 
 My power supplies just blow up while training on 2 GPUs 1080-Ti. Make sure that your have a warranty for your computer before training. 
-
 
 # References 
 

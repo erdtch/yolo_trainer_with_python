@@ -17,7 +17,7 @@ Config Parameter
 # list class label sort by number 
 class_number = 1 
 class_label = ['raccoon']
-classes_file = 'classes.name'
+classes_file = 'classes.names'
 
 
 # list images to training set and test set 

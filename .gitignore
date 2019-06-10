@@ -14,3 +14,4 @@ darknet.data
 *.log
 *.backup
 *.swp
+*.jpg
